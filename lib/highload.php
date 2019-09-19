@@ -2,9 +2,9 @@
 namespace Finder;
 
 use Bitrix\Main\Loader;
-use \Bitrix\Highloadblock\HighloadBlockTable as HL;
+use \Bitrix\Highloadblock\HighloadBlockTable as BHL;
 
-class Hl {
+class HL {
   /**
    * Hl haven't CODE, but a NAME
    * @param $name
@@ -17,7 +17,7 @@ class Hl {
           return 0;
       }
 
-      $hlData = HL::getRow([
+      $hlData = BHL::getRow([
           'filter' => [
               'LOGIC' => 'OR',
               'NAME' => $name,
