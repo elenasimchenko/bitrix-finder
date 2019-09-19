@@ -9,7 +9,7 @@ class Site {
    * @param string $siteId
    * @return string
    */
-  public static function getDomainUrl($siteId, $protocol = 'https'):string {
+  public static function getDomainUrl(string $siteId, string $protocol = 'https'):string {
       return $protocol.'://'.\CSite::GetByID($siteId)->Fetch()['SERVER_NAME'];
   }
   
@@ -18,7 +18,7 @@ class Site {
    * @param string $siteId
    * @return string
    */
-  public static function getDomain($siteId, $protocol = 'https'):string {
+  public static function getDomain(string $siteId):string {
       return \CSite::GetByID($siteId)->Fetch()['SERVER_NAME'];
   }
 }
