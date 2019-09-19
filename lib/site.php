@@ -1,5 +1,5 @@
 <?php
-namespace Finder
+namespace Finder;
 
 use Bitrix\Main\Loader;
 
